@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Literature Reader",
+        "price": 300,
+        "img": "./images/1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "English",
+        "price": 400,
+        "img": "./images/8.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Mathmatics",
+        "price": 450,
+        "img": "./images/9.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Chemistry",
+        "price": 500,
+        "img": "./images/6.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Physics",
+        "price": 550,
+        "img": "./images/5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Social Science",
+        "price": 600,
+        "img": "./images/2.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Social Science CBSE",
+        "price": 650,
+        "img": "./images/7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Biology",
+        "price": 700,
+        "img": "./images/3.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Science & Technology",
+        "price": 750,
+        "img": "./images/4.jpg"
+    }
+]
