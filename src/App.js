@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
+import Questions from './components/Questions/Questions';
 import Shop from './components/Shop/Shop';
-import Cartproduct from './components/Cartproduct/Cartproduct';
+
 
 
 
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <Header />
       <Shop products={products} />
+      <Questions />
     </div>
   );
 }

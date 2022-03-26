@@ -18,11 +18,32 @@ const Shop = ({ products }) => {
             alert('Hey you can not select more then 4 item')
             return;
         }
-
-
     }
     const handleReset = () => {
         setCart([])
+    }
+    const handleSelect1 = () => {
+        setCart([])
+        if (cart.length) {
+            const luckyNumber = Math.floor(Math.random() * cart.length);
+            const selectBook = cart[luckyNumber]
+            setCart([selectBook])
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
     return (
@@ -41,7 +62,7 @@ const Shop = ({ products }) => {
                             cart.map(product => <Cartproduct product={product} key={product.id} />)
                         }
                     </div>
-                    <button className='special1'>Select 1 to read</button>
+                    <button className='special1' onClick={handleSelect1}>Select 1 to read</button>
                     <button className='reset' onClick={handleReset}>Re-Select</button>
                 </div>
 
