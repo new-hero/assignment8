@@ -2,3 +2,8 @@
     font-size: 45px;
     color: salmon;
 }
+@media screen and (max-width:768px){
+   .heading{
+       font-size: 35px;
+    }
+  }
