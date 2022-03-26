@@ -1,0 +1,8 @@
+.cart-container{
+    background-color: #e0dfe1;
+    box-shadow: -50px 10px 10px 20px #edeced;
+    border-radius: 25px 0 0 25px;
+    z-index: -1;
+    padding: 30px;
+    margin: 30px;
+}
