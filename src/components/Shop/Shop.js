@@ -1,30 +1,50 @@
-
-
-import React, { useState, useEffect } from 'react';
-import Product from '../Product/Product';
-import Cart from '../Cart/Cart';
+// import Cart from '../Cart/Cart';
 import './Shop.css';
+import Product from '../Product/Product'
+import Cartproduct from '../Cartproduct/Cartproduct';
+import { useState } from 'react';
 
 
 
-const Shop = () => {
-    const [products, setProduct] = useState([]);
-    useEffect(() => {
-        fetch('product.json')
-            .then(res => res.json())
-            .then(data => setProduct(data))
-    }, [])
+const Shop = ({ products }) => {
+    const [cart, setCart] = useState([]);
+
+    const handleAddToCart = (product) => {
+        if (cart.length < 4) {
+            const newCart = [...cart, product];
+            setCart(newCart);
+        }
+        else {
+            alert('Hey you can not select more then 4 item')
+            return;
+        }
+
+
+    }
+    const handleReset = () => {
+        setCart([])
+    }
 
     return (
         <div className='main-container'>
             <div className="product-container">
                 {
-                    products.map(product => <Product product={product} key={product.id} />)
+                    products.map(product => <Product product={product} key={product.id} handleAddToCart={handleAddToCart} />)
                 }
 
             </div>
             <div>
-                <Cart></Cart>
+                <div className="cart-container">
+                    <h2>Select Item: {cart.length}</h2>
+                    <div>
+                        {
+                            cart.map(product => <Cartproduct product={product} key={product.id} />)
+                        }
+                    </div>
+                    <button className='special1'>Select 1 to read</button>
+                    <button className='reset' onClick={handleReset}>Re-Select</button>
+                </div>
+
 
             </div>
         </div>

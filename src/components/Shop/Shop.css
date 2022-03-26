@@ -14,26 +14,20 @@
 
 }
 .product-container img{
-   height: 200px;
+   height: 160px;
    width: 160px;
   }
 img{
     width: 100%;
 }
-.cart-container{
-    background-color: #e0dfe1;
-    box-shadow: -50px 10px 10px 20px #edeced;
-    border-radius: 25px 0 0 25px;
-    z-index: -1;
-    padding: 30px;
-    margin: 30px;
-}
+
 button{
     padding:5px 10px;
     border-radius: 12px;
     border: 1px solid gray;
     margin: 5px;
     cursor: pointer;
+    margin-top: 30px;
 }
 .special1{
     color: black;
@@ -45,4 +39,12 @@ button{
     background:#fff;
     padding: 20px;
     border-radius: 6px;
+}
+.cart-container{
+    background-color: #e0dfe1;
+    box-shadow: -50px 10px 10px  20px #edeced;
+    border-radius: 25px 0 0 25px;
+    z-index: -1;
+    padding: 30px;
+    margin: 30px;
 }

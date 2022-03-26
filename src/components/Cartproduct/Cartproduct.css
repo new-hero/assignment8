@@ -1,0 +1,11 @@
+.cartItem{
+    display: flex;
+    align-items: center;
+}
+.cartItem img{
+    width: 45px;
+    height: 52px;
+}
+.cartItem h3{
+    margin-left: 10px;
+}
